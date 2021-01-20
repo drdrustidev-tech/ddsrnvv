@@ -1,0 +1,55 @@
+
+:root {
+    --main-head-gradient: linear-gradient(rgb(19, 71, 243), rgb(67, 161, 238));
+    --main-navhover-gradient: linear-gradient(rgb(67, 161, 238), rgb(19, 71, 243));
+
+  }
+
+
+.my-top-header {
+    background-image: var(--main-head-gradient);
+}
+.navbar-custom {
+    background-image: var(--main-head-gradient);
+}
+
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: black;
+}
+
+/* change the link color */
+.navbar-custom .nav-item .nav-link {
+    text-transform: uppercase;
+    color: white;
+    
+}
+
+
+/* change the color of active or hovered links */
+.navbar-custom .nav-item .nav-link .active,
+.navbar-custom .nav-item .nav-link:hover {
+    text-transform: uppercase;
+    color: white;
+    background-image: var(--main-navhover-gradient);
+}
+
+/* for dropdown only - change the color of droodown */
+.navbar-custom .dropdown-menu {
+    background-color: rgb(19, 71, 243);
+}
+
+.navbar-custom .dropdown-item {
+    text-transform: uppercase;
+    color: white;
+    
+    
+}
+
+.navbar-custom .dropdown-item:hover,
+.navbar-custom .dropdown-item:focus {
+    text-transform: uppercase;
+    color: white;
+    background-image: var(--main-navhover-gradient);
+}
